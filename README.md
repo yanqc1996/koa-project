@@ -1,3 +1,6 @@
+
+
+
 原koa项目结构
 koa-project/（项目名称）
          |----  bin  
@@ -44,5 +47,8 @@ koa-project/（项目名称）
                      |---- index.js （sql语句）
          |----  view  
                      |---- layout.html
+         |----  dao 数据访问层，用来连接数据库，通过sql语句返回数据供service层使用
+         |----  service  业务服务层，执行业务逻辑并且通过dao层获取数据供controller层使用
+         |----  controller 控制器层，编写接口，通过service层获取数据供接口返回
          |----  app.js
          |----  package.json
