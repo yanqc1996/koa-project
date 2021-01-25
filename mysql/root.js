@@ -20,4 +20,5 @@ connection.query(sql, function (err, result) {
     
 });
 
+
 connection.end();

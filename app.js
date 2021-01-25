@@ -1,44 +1,39 @@
-const Koa = require('koa')
-const app = new Koa()
-const views = require('koa-views')
-const json = require('koa-json')
-const onerror = require('koa-onerror')
-const bodyparser = require('koa-bodyparser')
-const logger = require('koa-logger')
+/*项目依赖*/
+const Koa = require("koa");
+const koaJson = require("koa-json"); // get提交数据的中间件
+const bodyParser = require("koa-bodyparser"); // post提交数据中间件
+// const koaBody = require('koa-body');   // 文件上传
+const http = require("http");
+const routes = require("./routes");
+/*工具方法*/
+const util = require("./utilitys.js");
+/*配置文件*/
+const config = require("./config.js");
+/*应用实例*/
+const app = new Koa();
 
-const index = require('./routes/index')
-const users = require('./routes/users')
-
-// error handler
-onerror(app)
-
-// middlewares
-app.use(bodyparser({
-  enableTypes:['json', 'form', 'text']
-}))
-app.use(json())
-app.use(logger())
-app.use(require('koa-static')(__dirname + '/public'))
-
-app.use(views(__dirname + '/views', {
-  extension: 'pug'
-}))
-
-// logger
+app.use(bodyParser());
+app.use(koaJson());
+// app.use(koaBody({
+//     multipart: true,
+//     formidable: {
+//         maxFileSize: config.LIMIT.UPLOAD_IMG_SIZE    // 设置上传文件大小最大限制，默认2M
+//     }
+// }));
 app.use(async (ctx, next) => {
-  const start = new Date()
-  await next()
-  const ms = new Date() - start
-  console.log(`${ctx.method} ${ctx.url} - ${ms}ms`)
-})
-
-// routes
-app.use(index.routes(), index.allowedMethods())
-app.use(users.routes(), users.allowedMethods())
-
-// error-handling
-app.on('error', (err, ctx) => {
-  console.error('server error', err, ctx)
+  ctx.set("Access-Control-Allow-Origin", "*");
+  ctx.set("Access-Control-Allow-Methods", "OPTIONS, GET, PUT, POST, DELETE");
+  ctx.execSql = util.query;
+  await next();
 });
-
-module.exports = app
+/*配置属性*/
+const { SERVICE } = config;
+/*路由配置*/
+app.use(routes.routes());
+/*web服务*/
+http
+  .createServer(app.callback())
+  .listen(SERVICE.PORT)
+  .on("listening", function () {
+    console.log(`服务已开启，端口：${SERVICE.PORT}`);
+  });
