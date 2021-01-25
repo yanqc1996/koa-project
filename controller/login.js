@@ -1,5 +1,3 @@
-// controller 控制器层，编写接口，通过service层获取数据供接口返回（对接service层，实现接口返回）
-
 /*路由*/
 const router = require('koa-router')();
 /*接口服务*/
