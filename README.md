@@ -2,16 +2,7 @@
 
 
 原koa项目结构
-  a;shdp'iah'pajsd[
-      asd;asojdas'hdj'asbas
-      kd
-  ]adasdjas
-  djaSdnas'jd
-  ASdas;Dnas
-  dasbd'a
-  dmnassdASnsd adAb/as
-  as'ask打开asa 
-  ]
+123
 koa-project/（项目名称）
          |----  bin  
                      |---- www （启动文件）
