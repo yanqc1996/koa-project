@@ -2,7 +2,6 @@
 
 
 原koa项目结构
-aslshdaisouhdiaslgbcpos'aihb i;ajsod;ugbasliob ;oahsdsadas
 koa-project/（项目名称）
          |----  bin  
                      |---- www （启动文件）
@@ -22,7 +21,7 @@ koa-project/（项目名称）
          |----  app.js
          |----  package.json
 
-aos;udhaspohdas;ojn;k lajnsk a
+
 改造后项目结构（还未改造完成）
 koa-project/（项目名称）
          |----  bin  
@@ -53,6 +52,3 @@ koa-project/（项目名称）
          |----  controller 控制器层，编写接口，通过service层获取数据供接口返回
          |----  app.js
          |----  package.json
-
-
-         uiasghsdp9asobdo;iashdb;oashdblasida
