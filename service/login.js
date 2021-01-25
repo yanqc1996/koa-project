@@ -1,4 +1,3 @@
-// service层：业务服务层，执行业务逻辑并且通过dao层获取数据供controller层使用（业务层，对接dao层数据，完成业务逻辑）
 const loginDao = require("../dao/login");
 const util = require("../utilitys");
 /**
