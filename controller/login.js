@@ -6,6 +6,7 @@ const loginService = require("../service/login.js");
 const config = require("../config.js");
 const adminPrefix = config.API.ADMIN_INTERFACE_PREFIX;
 const mobilePrefix = config.API.MOBILE_INTERFACE_PREFIX;
+
 // 账号密码登录接口
 router.get(`${adminPrefix}/login`, loginService.adminLogin);
 // 手机号登录接口

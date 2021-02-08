@@ -19,6 +19,8 @@ module.exports = {
     PROJECT_INTERFACE_PREFIX: "/testApi",
     // 后台接口前缀
     ADMIN_INTERFACE_PREFIX: "/adminApi",
+    // 用户管理接口前缀
+    USER_MANAGER_PREFIX: "/managerApi",
     // 移动端接口前缀
     MOBILE_INTERFACE_PREFIX: "/mobileApi",
   },
@@ -30,4 +32,4 @@ module.exports = {
   LIMIT: {
     UPLOAD_IMG_SIZE: 200 * 1024 * 1024,
   },
-};
+}
