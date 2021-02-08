@@ -55,11 +55,6 @@ exports.phoneLogin = async (ctx) => {
  * @return {*} {Promise<boolean>}
  */
 exports.register = async (ctx) => {
-  // realName: this.ruleForm.name,
-  // phoneNumber: this.ruleForm.phone,
-  // company: this.ruleForm.company,
-  // acouunt: this.ruleForm.userName,
-  // password: this.ruleForm.pass,
   const {
     realName: name,
     phoneNumber: phone,
