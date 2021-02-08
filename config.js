@@ -2,7 +2,7 @@ module.exports = {
   // 服务器配置
   SERVICE: {
     HOST: "",
-    PORT: "3000",
+    PORT: "9999",
   },
   // 数据库连接配置
   DATABASE: {
