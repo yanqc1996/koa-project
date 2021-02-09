@@ -1,7 +1,7 @@
 const managerDao = require("../dao/manager")
 const util = require("../utilitys")
 /**
- * 用户管理表格查询
+ * 用户管理表格查询 TODO:此处考虑下划线转驼峰 mysql建表不能驼峰
  * @param ctx
  * @returns {Promise<boolean>}
  * @constructor
