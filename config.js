@@ -6,9 +6,9 @@ module.exports = {
   },
   // 数据库连接配置
   DATABASE: {
-    HOST: "localhost", // 连接的本地mysql
+    HOST: "114.55.106.181", // 连接的本地mysql
     USER: "root", // 用户名
-    PASSWORD: "123456", // 密码
+    PASSWORD: "@0611yqc@", // 密码
     PORT: "3306", // 端口号
     DATABASE: "amao", // 数据库名
     CONNECTION_LIMIT: 10,
