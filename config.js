@@ -21,6 +21,8 @@ module.exports = {
     ADMIN_INTERFACE_PREFIX: "/adminApi",
     // 用户管理接口前缀
     USER_MANAGER_PREFIX: "/managerApi",
+    // 二维码生成接口前缀
+    CODE_PREFIX: "/code",
     // 移动端接口前缀
     MOBILE_INTERFACE_PREFIX: "/mobileApi",
   },
