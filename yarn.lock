@@ -1448,10 +1448,10 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.npmjs.org/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
-am-util@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.npmjs.org/am-util/-/am-util-1.0.3.tgz#8579d3d50d73ddf490f1a4c22d30767120ae88b8"
-  integrity sha512-VE20kjKLBci4TdrTwYQBVKPmuwShKnlCRNXDD6fmpzmKcuzUon4YycCmohszJYAvnVyCYXwXk+kJiZSZNFdGSQ==
+am-util@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/am-util/-/am-util-1.0.4.tgz#e7ac8666f069b8c4ea59f00c0587877889e6e342"
+  integrity sha512-zB1uN5LjGzRUyvGtuFKnC5HqSoRGuicLfJvmKH0yZ30ErmYhKojxuBzbZU18cHDMvWHInQWsKnFJ7jTFM0CMgg==
   dependencies:
     "@babel/preset-env" "7.12.13"
     babel-core "6.26.3"
@@ -6924,6 +6924,11 @@ q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.npmjs.org/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
+
+qr-image@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/qr-image/-/qr-image-3.2.0.tgz#9fa8295beae50c4a149cf9f909a1db464a8672e8"
+  integrity sha1-n6gpW+rlDEoUnPn5CaHbRkqGcug=
 
 qs@^6.5.2:
   version "6.9.6"

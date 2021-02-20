@@ -1,4 +1,5 @@
 const qr = require("qr-image")
+import { CompHttp } from "am-util"
 
 /**
  * 二维码生成接口
@@ -7,9 +8,10 @@ const qr = require("qr-image")
  * @constructor
  */
 exports.query = async (ctx) => {
-  const text = ctx.query.text
+  // 动态判断是否增加http请求头
+  const text = CompHttp(ctx.query.text)
   try {
-    const img = qr.image("http://" + text, {
+    const img = qr.image(text, {
       size: 10,
     })
 
